@@ -1,0 +1,202 @@
+.paymentPage__container {
+  width: 98.89vw;
+  height: 47.4vw;
+  background: #9F4C1E;
+  padding: 10.42vw 0 0 14.84vw;
+}
+
+.paymentPage__container h2 {
+  font-family: 'Bebas Neue Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 5.21vw;
+}
+
+.paymentPage__container .paymentCard__container {
+  display: flex;
+}
+
+.paymentPage__container .paymentCard__box {
+  display: flex;
+}
+
+.paymentPage__container .paymentCard {
+  width: 15.63vw;
+  height: 23.49vw;
+  background: rgba(255, 214, 191, 0.23);
+  box-shadow: 0px -14px 24px rgba(0, 0, 0, 0.15), 0px 21px 27px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  padding: 2.6vw 0.31vw 0 0.31vw;
+  margin-right: 2.6vw;
+}
+
+.paymentPage__container .card__title {
+  height: 7.42vw;
+  font-family: 'Open Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+  padding-bottom: 2.6vw;
+}
+
+.paymentPage__container .card__title_fontSize {
+  font-size: 1.04vw;
+}
+
+.paymentPage__container .card__title_fontSize2 {
+  font-size: 1.25vw;
+}
+
+.paymentPage__container .card__text_time {
+  font-family: 'Open Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.paymentPage__container .card__text_payment {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25vw;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 2.6vw;
+}
+
+.paymentPage__container .normal__font_size {
+  font-family: 'Open Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.paymentPage__container .bold__font_size {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.paymentPage__container .paymentCard__button {
+  width: 10.94vw;
+  height: 3.39vw;
+  background: #FFFFFF;
+  border: 1px solid #8F4319;
+  box-shadow: 0px -14px 24px rgba(0, 0, 0, 0.15), 0px 21px 27px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+  margin: 0 2vw;
+  font-family: 'Bebas Neue Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 120%;
+  color: #8F4319;
+}
+
+@media (max-width: 1440px) {
+  .paymentPage__container {
+    width: 98.89vw;
+    height: 63.19vw;
+    background: #9F4C1E;
+    padding: 13.89vw 0 0 3.13vw;
+  }
+  .paymentPage__container h2 {
+    font-family: 'Bebas Neue Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.33vw;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 6.94vw;
+  }
+  .paymentPage__container .paymentCard__container {
+    display: flex;
+  }
+  .paymentPage__container .paymentCard__box {
+    display: flex;
+  }
+  .paymentPage__container .paymentCard {
+    width: 20.83vw;
+    height: 31.32vw;
+    background: rgba(255, 214, 191, 0.23);
+    box-shadow: 0px -14px 24px rgba(0, 0, 0, 0.15), 0px 21px 27px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(9px);
+    border-radius: 10px;
+    padding: 3.47vw 0.42vw 0 0.42vw;
+    margin-right: 3.47vw;
+  }
+  .paymentPage__container .card__title {
+    height: 9.89vw;
+    font-family: 'Open Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 3.47vw;
+  }
+  .paymentPage__container .card__title_fontSize {
+    font-size: 1.39vw;
+  }
+  .paymentPage__container .card__title_fontSize2 {
+    font-size: 1.67vw;
+  }
+  .paymentPage__container .card__text_time {
+    font-family: 'Open Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.67vw;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .paymentPage__container .card__text_payment {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.67vw;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 3.47vw;
+  }
+  .paymentPage__container .normal__font_size {
+    font-family: 'Open Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+  }
+  .paymentPage__container .bold__font_size {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+  }
+  .paymentPage__container .paymentCard__button {
+    width: 14.58vw;
+    height: 4.51vw;
+    background: #FFFFFF;
+    border: 1px solid #8F4319;
+    box-shadow: 0px -14px 24px rgba(0, 0, 0, 0.15), 0px 21px 27px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(9px);
+    border-radius: 10px;
+    margin: 0 2.6vw;
+    font-family: 'Bebas Neue Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.67vw;
+    line-height: 120%;
+    color: #8F4319;
+  }
+}

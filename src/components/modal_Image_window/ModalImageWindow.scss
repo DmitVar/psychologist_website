@@ -1,0 +1,21 @@
+.modalImage__container{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(7, 7, 7, 0.5);
+	z-index: 1001;
+}
+.image__box{
+	margin: 1vw auto;
+	width: 70.42vh;
+	height: 100vh;
+	overflow: hidden;
+	img{
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: cover;
+		object-position: bottom;
+	}
+}

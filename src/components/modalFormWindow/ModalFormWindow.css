@@ -1,0 +1,80 @@
+.modalWindow {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1001;
+}
+
+.modalWindow .form__container {
+  width: 29.95vw;
+  height: 33.54vw;
+  background: #FFFFFF;
+  position: relative;
+  padding: 3.65vw 4.06vw 0 4.06vw;
+  margin: 7vw auto;
+}
+
+.modalWindow .form__container form label {
+  font-family: 'Open Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.04vw;
+  line-height: 175%;
+  color: #141414;
+  margin-bottom: 3.13vw;
+}
+
+.modalWindow .form__container form input {
+  width: 21.77vw;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 3.13vw;
+  font-family: 'Open Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.83vw;
+  line-height: 219%;
+  background-color: transparent;
+}
+
+.modalWindow .form__container form input.error {
+  box-shadow: 0px 8px 24px rgba(247, 37, 22, 0.8);
+}
+
+.modalWindow .form__container .closeButton {
+  border: none;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 1.56vw;
+  left: 27.45vw;
+}
+
+.modalWindow .form__container .form__title {
+  font-family: 'Open Sans Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.08vw;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.modalWindow .form__container .form__buttom {
+  width: 11.98vw;
+  height: 3.39vw;
+  font-family: 'Bebas Neue Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 121%;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, rgba(254, 153, 98, 0.2) 0%, rgba(189, 80, 20, 0.2) 100%), #9F4C1E;
+  border: 1px solid #8F4319;
+  box-shadow: 0px 8px 24px rgba(107, 51, 20, 0.8);
+  border-radius: 10px;
+  margin-top: 0.99vw;
+}
