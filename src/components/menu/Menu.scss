@@ -1,7 +1,13 @@
-.menu-container{
+.desktop{
 	position: fixed;
 	top: 2.6vw;
 	left: 14.84vw;
+	display: block;
+}
+.table{
+	display: none;
+}
+.menu-container{
 	width: 70.31vw;
 	height: 5.2vw;
 	background: rgba(173, 129, 87, 0.52);
@@ -81,44 +87,49 @@
 	margin: 1.83vw 0 0 3.23vw;
 }
 @media (max-width: 1440px){
-	.menu-container{
+	.desktop{
 		position: fixed;
-		top: 3.47vw;
-		left: 3.13vw;
-		width:93.75vw;
-		height: 6.94vw;
+		left: 45px;
+		top: 50px;
+		display: block;
+	}
+	.table{
+		display: none;
+	}
+	.menu-container{
+		width: 1350px;
+		height: 100px;
 		background: rgba(173, 129, 87, 0.52);
 		box-shadow: 0px -14px 24px rgba(173, 129, 87, 0.15), 0px 21px 27px rgba(0, 0, 0, 0.15);
 		backdrop-filter: blur(9px);
 		border-radius: 10px;
-		padding: 0 2.78vw;
+		padding: 0 2.08vw;
 		display: flex;
 		z-index: 1000;
 		&__logo{
-			width: 18.5vw;
-			height: 3.06vw;
+			width: 265px;
+			height: 44px;
 		}
 	}
+	.tablet__navigation{
+		display: none;
+	}
 	.logo{
-		width: 18.5vw;
-		height: 3.06vw;
+		width: 265px;
+		height: 44px;
 		font-family: 'Open Sans Regular';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 2.36vw;
+		font-size: 34px;
 		line-height: 130%;
 		text-transform: uppercase;
 		color: #FFFFFF;
 		margin: 0.94vw 0 0 0;
 	}
 	.logo__profession{
-		width: 18.5vw;
-		height: 3.06vw;
+		width: 265px;
+		height: 21px;
 		text-align: center;
 		font-family: 'Open Sans Regular';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 1.11vw;
+		font-size: 16px;
 		line-height: 130%;
 		text-transform: uppercase;
 		color: #FFFFFF;
@@ -128,6 +139,7 @@
 		display: flex;
 	}
 	.navigation{
+		padding: 0 10px;
 		ul{
 			list-style: none;
 			padding-inline-start: 0;
@@ -135,40 +147,39 @@
 		}
 		li{
 			display: inline-block;
-			margin: 2.43vw 0.35vw 0 4vw;
+			margin: 35px 30px 0 34px;
 		}
 		a{
 			text-decoration: none;
 			font-family: 'Open Sans Bold';
-			font-style: normal;
-			font-weight: 700;
-			font-size: 1.67vw;
+			font-size: 24px;
 			line-height: 130%;
 			text-transform: uppercase;
 			color: #FFFFFF;
 		}
 	}
 	.navigation__phone{
-		width: 15.56vw;
-		height: 1.61vw;
+		width: 224px;
 		font-family: 'Open Sans Bold';
-		font-style: normal;
-		font-weight: 700;
-		font-size: 1.67vw;
+		font-size: 24px;
 		line-height: 130%;
 		text-transform: uppercase;
 		color: #FFFFFF;
-		margin: 2.43vw 0 0 4.3vw;
+		margin: 35px 0 0 30px;
 	}
 }
 @media (max-width: 768px){
-	.descktop__navigtion{
+	.desktop{
 		display: none;
 	}
-	.menu-container{
+
+	.tablet{
 		position: fixed;
 		top: 40px;
 		left: 20px;
+		z-index: 1000;
+	}
+	.menu-container{
 		width: 728px;
 		height: 100px;
 		background: rgba(173, 129, 87, 0.52);
@@ -185,9 +196,6 @@
 		}
 	}
 	.menu-container__big{
-		position: fixed;
-		top: 40px;
-		left: 20px;
 		width: 728px;
 		height: 594px;
 		background: rgba(173, 129, 87, 0.52);

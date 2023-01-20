@@ -64,67 +64,62 @@
   margin-top: 5.73vw;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   .faqPage__container {
-    height: 72.29vw;
+    height: 780px;
     background: #FFFFFF;
     display: flex;
+    padding-top: 100px;
   }
   .faqPage__container .faqPage__imageContainer {
-    width: 39.03vw;
-    height: 72.29vw;
+    width: 300px;
+    height: 555px;
     background-image: url(../../images/FAQ.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .faqPage__container .faqPage__contantContainer {
-    width: 60.97vw;
-    height: 72.29vw;
-    padding: 13.89vw 3.4vw 0 3.06vw;
+    width: 468px;
+    height: 780px;
+    padding: 40px 3.4vw 0 3.06vw;
   }
   .faqPage__container .faqPage__contantContainer h2 {
     font-family: 'Bebas Neue Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4.03vw;
+    font-size: 36px;
     line-height: 121%;
     color: #141414;
   }
   .accordion__box {
-    height: 27.78vw;
+    height: 420px;
     margin-top: 5vw;
   }
   .accordion-button {
-    height: 2.78vw;
+    height: 45px;
     margin: 0;
     padding: 0 0.5vw;
     border: none;
     font-family: 'Open Sans Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.67vw;
+    font-size: 16px;
     line-height: 138%;
   }
   .accordion {
     --bs-accordion-border-width: 0;
   }
   .faqPage__buttom {
-    width: 30.9vw;
-    height: 4.51vw;
+    width: 400px;
+    height: 65px;
     background: linear-gradient(180deg, rgba(254, 153, 98, 0.2) 0%, rgba(189, 80, 20, 0.2) 100%), #9F4C1E;
     border: 1px solid #8F4319;
     box-shadow: 0px 8px 24px rgba(107, 51, 20, 0.8);
     border-radius: 10px;
     font-family: 'Bebas Neue Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.67vw;
+    font-size: 24px;
     line-height: 121%;
     color: #FFFFFF;
     margin-top: 7.64vw;
   }
   .accordion-body {
-    font-size: 1.39vw;
+    font-size: 14px;
   }
 }
