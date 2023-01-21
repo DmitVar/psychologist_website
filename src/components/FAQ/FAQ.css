@@ -1,3 +1,11 @@
+.faq__desktop {
+  display: block;
+}
+
+.faq__phone {
+  display: none;
+}
+
 .faqPage__container {
   height: 54.22vw;
   background: #FFFFFF;
@@ -65,6 +73,12 @@
 }
 
 @media (max-width: 768px) {
+  .faq__desktop {
+    display: block;
+  }
+  .faq__phone {
+    display: none;
+  }
   .faqPage__container {
     height: 780px;
     background: #FFFFFF;
@@ -118,6 +132,74 @@
     line-height: 121%;
     color: #FFFFFF;
     margin-top: 7.64vw;
+  }
+  .accordion-body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 376px) {
+  .faq__desktop {
+    display: none;
+  }
+  .faq__phone {
+    display: block;
+  }
+  .faqPage__container {
+    width: 375px;
+    height: 1250px;
+    background: #FFFFFF;
+    display: block;
+    padding-top: 100px;
+  }
+  .faqPage__container .faqPage__imageContainer {
+    width: 375px;
+    height: 375px;
+    background-image: url(../../images/FAQ2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .faqPage__container .faqPage__contantContainer {
+    width: 375px;
+    height: 1300px;
+    padding: 40px 0 0 0;
+  }
+  .faqPage__container .faqPage__contantContainer h2 {
+    font-family: 'Bebas Neue Regular';
+    font-size: 36px;
+    line-height: 121%;
+    color: #141414;
+    margin: 0 8px;
+  }
+  .accordion__box {
+    height: 520px;
+    margin-top: 5vw;
+  }
+  .accordion-button {
+    height: 45px;
+    margin: 0;
+    padding: 0 0.5vw;
+    border: none;
+    font-family: 'Open Sans Regular';
+    font-size: 16px;
+    line-height: 138%;
+  }
+  .accordion {
+    --bs-accordion-border-width: 0;
+  }
+  .faqPage__buttom {
+    width: 339px;
+    height: 65px;
+    background: linear-gradient(180deg, rgba(254, 153, 98, 0.2) 0%, rgba(189, 80, 20, 0.2) 100%), #9F4C1E;
+    border: 1px solid #8F4319;
+    box-shadow: 0px 8px 24px rgba(107, 51, 20, 0.8);
+    border-radius: 10px;
+    font-family: 'Bebas Neue Regular';
+    font-size: 24px;
+    line-height: 121%;
+    color: #FFFFFF;
+    margin: 10px 0 0 8px;
   }
   .accordion-body {
     font-size: 14px;

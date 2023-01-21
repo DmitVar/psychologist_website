@@ -37,10 +37,11 @@
 }
 
 .contacts__container .contactsInformation__box .phone__icone {
+  width: 22px;
   display: inline-block;
   margin-right: 0.5vw;
   vertical-align: top;
-  padding-top: 0.4vw;
+  padding-top: 0.7vw;
 }
 
 .contacts__container .contactsInformation__box .phone__text {
@@ -302,5 +303,106 @@
     line-height: 121%;
     color: #FFFFFF;
     margin-top: 80px;
+  }
+}
+
+@media (max-width: 376px) {
+  .contacts__container {
+    width: 376px;
+    height: 1046px;
+    background: #9F4C1E;
+    padding: 150px 3.13vw 0 3.13vw;
+  }
+  .contacts__container h2 {
+    font-family: 'Bebas Neue Regular';
+    font-size: 36px;
+    line-height: 121%;
+    color: #FFFFFF;
+    margin-bottom: 2.5vw;
+  }
+  .contacts__container p {
+    width: 339px;
+    font-family: 'Open Sans Regular';
+    font-size: 16px;
+    line-height: 146%;
+    color: #FFFFFF;
+    margin-bottom: 6.94vw;
+  }
+  .contacts__container .contactsInformation__box {
+    width: 375px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .contacts__container .contactsInformation__box .information__box {
+    width: 364px;
+  }
+  .contacts__container .contactsInformation__box .contactsText {
+    width: 364px;
+    margin-bottom: 3.61vw;
+    vertical-align: top;
+    line-height: 135%;
+    margin-bottom: 42px;
+  }
+  .contacts__container .contactsInformation__box .phone__icone {
+    display: inline-block;
+    margin-right: 0.5vw;
+    padding-top: 0.4vw;
+    margin-bottom: 42px;
+  }
+  .contacts__container .contactsInformation__box .phone__text {
+    width: 200px;
+    display: inline-block;
+    padding-bottom: 20;
+    margin-bottom: 42px;
+  }
+  .contacts__container .contactsInformation__box .text__email {
+    margin-bottom: 42px;
+  }
+  .socialIcon__box {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .socialIcon__box .docialIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .socialIcon__box .instagram {
+    background-image: url(../../images/icons/instagram.svg);
+  }
+  .socialIcon__box .viber {
+    background-image: url(../../images/icons/viber_icon.svg);
+  }
+  .socialIcon__box .telegram {
+    background-image: url(../../images/icons/telegram_icon.svg);
+  }
+  .contactsForm input {
+    display: block;
+    width: 359px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    outline: none;
+    margin-bottom: 4.17vw;
+    color: #FFFFFF;
+  }
+  .contactsForm button {
+    width: 155px;
+    height: 59px;
+    background: linear-gradient(180deg, rgba(254, 153, 98, 0.2) 0%, rgba(189, 80, 20, 0.2) 100%), #9F4C1E;
+    border: 1px solid #8F4319;
+    box-shadow: 0px 8px 24px rgba(107, 51, 20, 0.8);
+    border-radius: 10px;
+    font-family: 'Bebas Neue Regular';
+    font-size: 24px;
+    line-height: 121%;
+    color: #FFFFFF;
+    margin: 60px 0;
   }
 }

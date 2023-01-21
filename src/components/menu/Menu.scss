@@ -3,8 +3,12 @@
 	top: 2.6vw;
 	left: 14.84vw;
 	display: block;
+	z-index: 1000;
 }
 .table{
+	display: none;
+}
+.phone{
 	display: none;
 }
 .menu-container{
@@ -92,8 +96,12 @@
 		left: 45px;
 		top: 50px;
 		display: block;
+		z-index: 1000;
 	}
 	.table{
+		display: none;
+	}
+	.phone{
 		display: none;
 	}
 	.menu-container{
@@ -172,12 +180,14 @@
 	.desktop{
 		display: none;
 	}
-
 	.tablet{
 		position: fixed;
 		top: 40px;
 		left: 20px;
 		z-index: 1000;
+	}
+	.phone{
+		display: none;
 	}
 	.menu-container{
 		width: 728px;
@@ -281,6 +291,138 @@
 		display: flex;
 		justify-content: space-around;
 		padding: 0 190px;
+		.docialIcon{
+			width: 42px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: #000;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.instagram{
+			background-image: url(../../images/icons/instagram.svg);
+		}
+		.viber{
+			background-image: url(../../images/icons/viber_icon.svg);
+		}
+		.telegram{
+			background-image: url(../../images/icons/telegram_icon.svg);
+		}
+	}
+}
+@media (max-width: 376px){
+	.desktop{
+		display: none;
+	}
+	.tablet{
+		display: none;
+	}
+	.phone{
+		display: block;
+		position: fixed;
+		top: 20px;
+		left: 8px;
+		z-index: 1001;
+	}
+	.menu-container{
+		width: 359px;
+		height: 80px;
+		background: rgba(173, 129, 87, 0.52);
+		box-shadow: 0px -14px 24px rgba(173, 129, 87, 0.15), 0px 21px 27px rgba(0, 0, 0, 0.15);
+		backdrop-filter: blur(9px);
+		border-radius: 10px;
+		padding: 12px 10px;
+		z-index: 1001;
+		display: block;
+		overflow: hidden;
+		&__logo{
+			width: 187px;
+			height: 52px;
+		}
+	}
+	.menu-container__big{
+		width: 359px;
+		height: 667px;
+		background: rgba(173, 129, 87, 0.52);
+		box-shadow: 0px -14px 24px rgba(173, 129, 87, 0.15), 0px 21px 27px rgba(0, 0, 0, 0.15);
+		backdrop-filter: blur(9px);
+		border-radius: 10px;
+		padding: 32px 18px;
+		z-index: 1000;
+		display: block;
+		overflow: hidden;
+	}
+	.tablet__viseble-container{
+		width: 359px;
+		height: 80px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.logo{
+		width: 187px;
+		height: 31px;
+		font-family: 'Open Sans Regular';
+		font-size: 24px;
+		line-height: 130%;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin: 0;
+	}
+	.logo__profession{
+		width: 187px;
+		height: 21px;
+		font-family: 'Open Sans Regular';
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	.navigation__container{
+		display: block;
+	}
+	.navigation__phone{
+		width: 224px;
+		height: 31px;
+		font-family: 'Open Sans Bold';
+		font-size: 24px;
+		line-height: 130%;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin: 80px 54px;
+	}
+	.button__container{
+		width: 80px;
+		height: 80px;
+		padding: 12px 0 0 0;
+	}
+	.navigation{
+		margin-bottom: 16px;
+		padding: 0;
+		ul{
+			width: 329px;
+			list-style: none;
+			padding-inline-start: 0;
+			margin-top: 23px;
+		}
+		li{
+			width: 319px;
+			display: block;
+			margin: 40px 0 0 0;
+			text-align: center;
+		}
+		a{
+			text-decoration: none;
+			font-family: 'Open Sans Regular';
+			font-size: 16px;
+			line-height: 135%;
+			text-transform: uppercase;
+			color: #FFFFFF;
+		}
+	}
+	.navigation__socialIcon__box{
+		width: 315px;
+		height: 42px;
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
 		.docialIcon{
 			width: 42px;
 			height: 40px;
