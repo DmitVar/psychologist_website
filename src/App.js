@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 import Menu from './components/menu/Menu';
 import Header from './components/header/Header';
@@ -9,6 +10,7 @@ import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
 import ModalImageWindow from './components/modal_Image_window/ModalImageWindow';
 import ModalFormWindow from './components/modalFormWindow/ModalFormWindow';
+import ThanksModalWindow from './components/thanksModalWindow/ThanksModalWindow'
 
 import './App.min.css';
 import imageDiplom1 from './images/Diplom_1.jpg';
@@ -26,6 +28,7 @@ function App() {
   const [modalImageWindow, setModalImageWindow] = useState(false);
   const [modalImage, setModalImage] = useState('');
   const [modalFormWindow, setModalFormWindow] = useState(false);
+  const [thanksModalWindow, setThanksModalWindow] = useState(false)
 
   const showModalImage = (id) => {
     setModalImageWindow(true);
@@ -53,25 +56,38 @@ function App() {
 
     setModalFormWindow(true);
   }
+  const showThanksModalWindow = () => {
+    setModalFormWindow(false);
+    setThanksModalWindow(true);
+  }
   const closeModalFormWindow = () => {
     setModalFormWindow(false);
   }
   const closeModalImage = () => {
     setModalImageWindow(false);
   }
+  const closeThanksModalWindow = () => {
+    setThanksModalWindow(false);
+  }
   return (
     <div className='main-container'>
+      <Helmet>
+        <meta name="description" content="Косультации психолога в Минске и Республике Беларусь. Оказание психологической помощи в вопросах развития детей и детско-родительских отношений. Психолог онлайн консультация. +375 (44) 793-53-68." />
+        <meta name='keywords' content='психолог, детский психолог, психолог учащимся, психологичская помощь, высокочувствительный ребенок, детская психология, консультация, консультация психолога, психологическая диагностика, ответы на вопросы, психолог минск, психолог беларусь' />
+        <title>Мария Бурибо психолог</title>
+      </Helmet>
       <Menu />
       <Header />
       <main>
         <About showModalImage={showModalImage} showModalFormWindow={showModalFormWindow} />
         <PaymentPage />
         <FAQPage showModalFormWindow={showModalFormWindow} />
-        <Contacts />
+        <Contacts showThanksModalWindow={showThanksModalWindow} />
       </main>
       <Footer />
       {modalImageWindow ? <ModalImageWindow modalImage={modalImage} closeModalImage={closeModalImage} /> : null}
-      {modalFormWindow ? <ModalFormWindow closeModalFormWindow={closeModalFormWindow} /> : null}
+      {modalFormWindow ? <ModalFormWindow closeModalFormWindow={closeModalFormWindow} showThanksModalWindow={showThanksModalWindow} /> : null}
+      {thanksModalWindow ? <ThanksModalWindow closeThanksModalWindow={closeThanksModalWindow} /> : null}
     </div>
   );
 }

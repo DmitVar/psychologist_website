@@ -1,8 +1,8 @@
 <?php
 // Файлы phpmailer
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
+require 'phpmailer/src/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
@@ -38,7 +38,7 @@ try {
     $mail->setFrom('mpsihologist@mail.ru', 'Заявка с сайта'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('dmitvar@gmail.com');
+    $mail->addAddress('buribo.maria@mail.ru');
 
     // Отправка сообщения
     $mail->isHTML(true);
@@ -56,4 +56,5 @@ try {
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
-header('https://www.onliner.by/');
+header('Content-type: application/json');
+echo json_encode(["result" => $result, "status" => $status]);

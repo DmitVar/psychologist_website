@@ -23,9 +23,9 @@ const Footer = (props) => {
 				</div>
 				<div className="footer__menu__social">
 					<div className="socialIcon__box">
-						<a href='#'><div className="docialIcon instagram"></div></a>
-						<a href='#'><div className="docialIcon viber"></div></a>
-						<a href='#'><div className="docialIcon telegram"></div></a>
+						<a href='https://www.instagram.com/buribo.maria/' target="_blanck"><div className="docialIcon instagram"></div></a>
+						<a href='viber://chat?number=+375447935368' target='_blanck'><div className="docialIcon viber"></div></a>
+						<a href='https://t.me/UserName' target="_blank"><div className="docialIcon telegram"></div></a>
 					</div>
 				</div>
 			</div>
