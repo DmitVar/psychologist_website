@@ -201,34 +201,34 @@
 }
 @media(max-width: 768px){
 	.contacts__container{
-		width: 768px;
-		height: 741px;
+		width: 100vw;
+		height: 96.48vw;
 		background: #9F4C1E;
-		padding: 150px 3.13vw 0 3.13vw;
+		padding: 19.53vw 3.13vw 0 3.13vw;
 		h2{
 			font-family: 'Bebas Neue Regular';
-			font-size: 36px;
+			font-size: 4.69vw;
 			line-height: 121%;
 			color: #FFFFFF;
 			margin-bottom: 2.5vw;
 		}
 		p{
-			width: 728px;
+			width: 94.79vw;
 			font-family: 'Open Sans Regular';
-			font-size: 16px;
+			font-size: 2.08vw;
 			line-height: 146%;
 			color: #FFFFFF;
 			margin-bottom: 6.94vw;
 		}
 		.contactsInformation__box{
-			width: 728px;
+			width: 94.79vw;
 			display: flex;
 			justify-content: space-between;
 			.information__box{
-				width: 364px;
+				width: 47.4vw;
 			}
 			.contactsText{
-				width: 364px;
+				width: 47.4vw;
 				margin-bottom: 3.61vw;
 				vertical-align: top;
 			}
@@ -239,9 +239,9 @@
 				padding-top: 0.4vw
 			}
 			.phone__text{
-				width: 200px;
+				width: 26.04vw;
 				display: inline-block;
-				padding-bottom: 20;
+				padding-bottom: 2.6vw;
 				margin-bottom: 3.26vw;
 			}
 			.text__email{
@@ -251,12 +251,12 @@
 	
 	}
 	.socialIcon__box{
-		width: 200px;
+		width: 26.04vw;
 		display: flex;
 		justify-content: space-between;
 		.docialIcon{
-			width: 40px;
-			height: 40px;
+			width: 5.21vw;
+			height: 5.21vw;
 			border-radius: 50%;
 			background-color: #000;
 			background-repeat: no-repeat;
@@ -275,8 +275,8 @@
 	.contactsForm{
 		input{
 			display: block;
-			width: 300px;
-			height: 40px;
+			width: 39.06vw;
+			height: 5.21vw;
 			background-color: transparent;
 			border: none;
 			border-bottom: 1px solid #FFFFFF;
@@ -285,70 +285,70 @@
 			color: #FFFFFF;
 		}
 		button{
-			width: 225px;
-			height: 65px;
+			width: 29.29vw;
+			height: 8.46vw;
 			background: linear-gradient(180deg, rgba(254, 153, 98, 0.2) 0%, rgba(189, 80, 20, 0.2) 100%), #9F4C1E;
 			border: 1px solid #8F4319;
 			box-shadow: 0px 8px 24px rgba(107, 51, 20, 0.8);
 			border-radius: 10px;
 			font-family: 'Bebas Neue Regular';
-			font-size: 24px;
+			font-size: 3.13vw;
 			line-height: 121%;
 			color: #FFFFFF;
-			margin-top: 80px;
+			margin-top: 10.42vw;
 		}
 	}
 }
 @media(max-width: 376px){
 	.contacts__container{
-		width: 376px;
-		height: 1046px;
+		width: 100vw;
+		height: 278.93vw;
 		background: #9F4C1E;
-		padding: 150px 3.13vw 0 3.13vw;
+		padding: 40vw 3.13vw 0 3.13vw;
 		h2{
 			font-family: 'Bebas Neue Regular';
-			font-size: 36px;
+			font-size: 9.6vw;
 			line-height: 121%;
 			color: #FFFFFF;
 			margin-bottom: 2.5vw;
 		}
 		p{
-			width: 339px;
+			width: 90.4vw;
 			font-family: 'Open Sans Regular';
-			font-size: 16px;
+			font-size: 4.2vw;
 			line-height: 146%;
 			color: #FFFFFF;
 			margin-bottom: 6.94vw;
 		}
 		.contactsInformation__box{
-			width: 375px;
+			width: 100vw;
 			display: flex;
 			flex-direction: column-reverse;
 			justify-content: space-between;
 			.information__box{
-				width: 364px;
+				width: 97.07vw;
 			}
 			.contactsText{
-				width: 364px;
+				width: 97.07vw;
 				margin-bottom: 3.61vw;
 				vertical-align: top;
 				line-height: 135%;
-				margin-bottom: 42px;
+				margin-bottom: 11.2vw;
 			}
 			.phone__icone{
 				display: inline-block;
 				margin-right: 0.5vw;
 				padding-top: 0.4vw;
-				margin-bottom: 42px
+				margin-bottom: 11.2vw;
 			}
 			.phone__text{
-				width: 200px;
+				width: 53.33vw;
 				display: inline-block;
-				padding-bottom: 20;
-				margin-bottom: 42px;
+				padding-bottom: 5.33vw;
+				margin-bottom: 11.2vw;
 			}
 			.text__email{
-				margin-bottom: 42px;
+				margin-bottom: 11.2vw;
 			}
 		}
 	

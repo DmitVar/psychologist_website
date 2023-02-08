@@ -64,7 +64,7 @@ const Menu = (props) => {
 						<div className="navigation__socialIcon__box">
 							<a href='https://www.instagram.com/buribo.maria/' target="_blanck"><div className="docialIcon instagram"></div></a>
 							<a href='viber://chat?number=375447935368' target="_blanck" ><div className="docialIcon viber" target="_blanck"></div></a>
-							<a href='https://t.me/UserName' target="_blank"><div className="docialIcon telegram"></div></a>
+							<a href='https://t.me/Maria_Buribo' target="_blank"><div className="docialIcon telegram"></div></a>
 						</div>
 					</div>
 
@@ -100,7 +100,7 @@ const Menu = (props) => {
 						<div className="navigation__socialIcon__box">
 							<a href='https://www.instagram.com/buribo.maria/'><div className="docialIcon instagram"></div></a>
 							<a href='viber://chat?number=375447935368' target="_blanck" ><div className="docialIcon viber" target="_blanck"></div></a>
-							<a href='https://t.me/UserName' target="_blank"><div className="docialIcon telegram"></div></a>
+							<a href='https://t.me/Maria_Buribo' target="_blank"><div className="docialIcon telegram"></div></a>
 						</div>
 					</div>
 

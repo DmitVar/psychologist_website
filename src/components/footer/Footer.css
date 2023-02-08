@@ -69,11 +69,11 @@
 
 @media (max-width: 768px) {
   .footer {
-    width: 768px;
-    height: 345px;
+    width: 100vw;
+    height: 44.92vw;
     background-color: #000;
     color: #FFFFFF;
-    padding: 50px 20px 0 20px;
+    padding: 6.51vw 2.6vw 0 2.6vw;
     display: flex;
     justify-content: space-between;
   }
@@ -86,18 +86,18 @@
   }
   .footer__contactInformation span {
     font-family: 'Open Sans Bold';
-    font-size: 16px;
+    font-size: 2.08vw;
     line-height: 130%;
   }
   .footer__menu__social .socialIcon__box {
     margin: 0 auto;
   }
   .footer__legalInformation {
-    width: 223px;
+    width: 29.03vw;
   }
   .footer__legalInformation p {
     font-family: 'Open Sans Regular';
-    font-size: 14px;
+    font-size: 1.82vw;
     line-height: 130%;
   }
   .footer__navigation {
@@ -127,11 +127,11 @@
 
 @media (max-width: 376px) {
   .footer {
-    width: 375px;
-    height: 402px;
+    width: 100vw;
+    height: 107.2vw;
     background-color: #000;
     color: #FFFFFF;
-    padding: 40px 9px 0 9px;
+    padding: 10.67vw 2.4vw 0 2.4vw;
     display: flex;
     justify-content: space-between;
   }
@@ -144,18 +144,18 @@
   }
   .footer__contactInformation span {
     font-family: 'Open Sans Bold';
-    font-size: 16px;
+    font-size: 4.27vw;
     line-height: 130%;
   }
   .footer__menu__social .socialIcon__box {
     margin: 0 auto;
   }
   .footer__legalInformation {
-    width: 223px;
+    width: 59.47vw;
   }
   .footer__legalInformation p {
     font-family: 'Open Sans Regular';
-    font-size: 14px;
+    font-size: 3.72vw;
     line-height: 130%;
   }
   .footer__navigation {
@@ -169,7 +169,7 @@
   .footer__navigation li {
     list-style: none;
     display: block;
-    margin: 0 0 20px 0;
+    margin: 0 0 5.33vw 0;
   }
   .footer__navigation ul {
     margin-block-start: 0;

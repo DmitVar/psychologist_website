@@ -45,7 +45,7 @@ const Contacts = (props) => {
 						<div className="socialIcon__box">
 							<a href='https://www.instagram.com/buribo.maria/' target="_blanck"><div className="docialIcon instagram" ></div></a>
 							<a href='viber://chat?number=+375447935368'><div className="docialIcon viber"></div></a>
-							<a href='https://t.me/UserName' target="_blank"><div className="docialIcon telegram"></div></a>
+							<a href='https://t.me/Maria_Buribo' target="_blank"><div className="docialIcon telegram"></div></a>
 						</div>
 					</div>
 					<div className="contactForm__box">
