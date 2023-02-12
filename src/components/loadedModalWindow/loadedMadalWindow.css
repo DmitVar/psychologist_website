@@ -1,0 +1,15 @@
+.loaded__window {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50vh;
+  padding-left: 50vw;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.loaded__window img {
+  max-width: 5%;
+}

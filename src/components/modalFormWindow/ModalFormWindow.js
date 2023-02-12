@@ -8,6 +8,7 @@ const ModalFormWindow = (props) => {
 	const [modalFormFieldPhoneOrEmail, setModalFormFieldPhoneOrEmail] = useState('');
 	const sendModalForm = async (e) => {
 		e.preventDefault()
+		props.showLoadingModalWindow();
 		let formFieldValues = new FormData()
 		formFieldValues.append('name', modalFormFieldName);
 		formFieldValues.append('phoneOrEmail', modalFormFieldPhoneOrEmail);
@@ -21,6 +22,8 @@ const ModalFormWindow = (props) => {
 		});
 		console.log(respons);
 		if (respons.ok) {
+			props.closeModalFormWindow();
+			props.closeLoadingModalWindow();
 			props.showThanksModalWindow();
 		} else {
 			console.log("Error fetch");

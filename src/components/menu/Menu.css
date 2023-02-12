@@ -345,7 +345,7 @@
     backdrop-filter: blur(9px);
     border-radius: 10px;
     padding: 3.2vw 2.67vw;
-    z-index: 1001;
+    z-index: 800;
     display: block;
     overflow: hidden;
   }

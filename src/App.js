@@ -10,7 +10,8 @@ import Contacts from './components/contacts/Contacts';
 import Footer from './components/footer/Footer';
 import ModalImageWindow from './components/modal_Image_window/ModalImageWindow';
 import ModalFormWindow from './components/modalFormWindow/ModalFormWindow';
-import ThanksModalWindow from './components/thanksModalWindow/ThanksModalWindow'
+import ThanksModalWindow from './components/thanksModalWindow/ThanksModalWindow';
+import LoadedModalWindow from './components/loadedModalWindow/LoadedModalWindow';
 
 import './App.min.css';
 import imageDiplom1 from './images/Diplom_1.jpg';
@@ -28,7 +29,8 @@ function App() {
   const [modalImageWindow, setModalImageWindow] = useState(false);
   const [modalImage, setModalImage] = useState('');
   const [modalFormWindow, setModalFormWindow] = useState(false);
-  const [thanksModalWindow, setThanksModalWindow] = useState(false)
+  const [thanksModalWindow, setThanksModalWindow] = useState(false);
+  const [loadedModalWindow, setLoadedMadalWindow] = useState(false);
 
   const showModalImage = (id) => {
     setModalImageWindow(true);
@@ -60,6 +62,9 @@ function App() {
     setModalFormWindow(false);
     setThanksModalWindow(true);
   }
+  const showLoadingModalWindow = () => {
+    setLoadedMadalWindow(true)
+  }
   const closeModalFormWindow = () => {
     setModalFormWindow(false);
   }
@@ -68,6 +73,9 @@ function App() {
   }
   const closeThanksModalWindow = () => {
     setThanksModalWindow(false);
+  }
+  const closeLoadingModalWindow = () => {
+    setLoadedMadalWindow(false)
   }
   return (
     <div className='main-container'>
@@ -82,12 +90,18 @@ function App() {
         <About showModalImage={showModalImage} showModalFormWindow={showModalFormWindow} />
         <PaymentPage />
         <FAQPage showModalFormWindow={showModalFormWindow} />
-        <Contacts showThanksModalWindow={showThanksModalWindow} />
+        <Contacts showThanksModalWindow={showThanksModalWindow}
+          showLoadingModalWindow={showLoadingModalWindow}
+          closeLoadingModalWindow={closeLoadingModalWindow} />
       </main>
       <Footer />
       {modalImageWindow ? <ModalImageWindow modalImage={modalImage} closeModalImage={closeModalImage} /> : null}
-      {modalFormWindow ? <ModalFormWindow closeModalFormWindow={closeModalFormWindow} showThanksModalWindow={showThanksModalWindow} /> : null}
+      {modalFormWindow ? <ModalFormWindow closeModalFormWindow={closeModalFormWindow}
+        showThanksModalWindow={showThanksModalWindow}
+        showLoadingModalWindow={showLoadingModalWindow}
+        closeLoadingModalWindow={closeLoadingModalWindow} /> : null}
       {thanksModalWindow ? <ThanksModalWindow closeThanksModalWindow={closeThanksModalWindow} /> : null}
+      {loadedModalWindow ? <LoadedModalWindow></LoadedModalWindow> : null}
     </div>
   );
 }

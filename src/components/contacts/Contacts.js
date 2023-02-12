@@ -9,6 +9,7 @@ const Contacts = (props) => {
 	const [formFieldText, setFormFieldText] = useState('');
 	const sendForm = async (e) => {
 		e.preventDefault()
+		props.showLoadingModalWindow();
 		let formFieldValues = new FormData()
 		formFieldValues.append('name', formFieldName);
 		formFieldValues.append('phoneOrEmail', formFieldPhoneOrEmail);
@@ -23,6 +24,7 @@ const Contacts = (props) => {
 		});
 		console.log(respons);
 		if (respons.ok) {
+			props.closeLoadingModalWindow();
 			props.showThanksModalWindow();
 		} else {
 			console.log("Error fetch");
